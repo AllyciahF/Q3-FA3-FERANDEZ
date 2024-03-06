@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var min=0;
+        var max=1000;
+        var r = Math.round((Math.random()*(max-min+1)))
+        var hundreths=r
+        var hundy=Math.floor((hundreths/100))
+        var tenths=r
+        var ten=Math.floor((tenths % 100)/10)
+        var ones=r
+        var one=Math.floor(ones%10)
+       
+       
+       
+       
+       
+       
+        document.write("Randomly Generated Number "+r);
+        var n=0;
+
+    
+
+        if(ten==0)
+        {
+            document.write("<br>Breakdown: "+hundy+"00, "+ten+", "+one);
+            
+        }
+        else if(hundy==0){
+            document.write("<br>Breakdown: "+hundy+", "+ten+"0," +one);
+            
+        }
+      else if(ten!=0&&hundy!=0){
+       
+         document.write("<br>Breakdown: "+hundy+"00, " +ten+"0, "+one);
+         
+     }else if(ten==0&&hundy==0)
+     {
+        document.write("<br>Breakdown: "+hundy+ "," +ten+","+one);
+     }
+  
+     
+        var date=new Date();
+        document.write('<br>'+date);
+
+
+
+    </script>
+</body>
+</html>
